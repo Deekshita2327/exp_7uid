@@ -15,4 +15,4 @@ spec:
   - port: 3000
     targetPort: 80
     protocol: TCP
-kubectl forward-port service/todo-service 3000:3000
+kubectl port-forward service/todo-service 3000:3000
