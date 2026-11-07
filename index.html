@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>to do app</h1>
+        <input type="text" id="task" placeholder="type">
+        <button onclick="hello()">click</button>
+        <ul id="list"></ul>
+        <script>
+            function hello(){
+                let t=document.getElementById("task").value;
+                if(t==null){
+                    alert("enter data");
+                }
+                let li=document.createElement("li");
+                li.innerText=t;
+                document.getElementById("list").appendChild(li);
+            }
+        </script>
+    </body>
+</html>
